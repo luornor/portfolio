@@ -7,7 +7,7 @@ export default function BackgroundGlow() {
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {/* Orb 1 */}
       <motion.div
-        className="absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full blur-3xl opacity-30"
+        className="absolute -top-24 -left-24 h-105 w-105 rounded-full blur-3xl opacity-30"
         style={{
           background:
             "radial-gradient(circle at 30% 30%, rgba(37,99,235,0.55), transparent 60%)",
