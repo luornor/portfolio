@@ -149,11 +149,11 @@ export default function Page() {
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_380px] xl:grid-cols-[minmax(0,1.3fr)_420px]">
             <div>
               <Reveal delay={0.05}>
-                <h3 className="hero-title mt-6 max-w-2xl font-semibold text-white">
+                <h2 className="hero-title mt-6 max-w-2xl font-semibold text-white">
                   Building <span className="accent-text">backend-heavy</span>{" "}
                   products with interfaces that still feel sharp, modern, and
                   fast.
-                </h3>
+                </h2>
               </Reveal>
 
               <Reveal delay={0.1}>
