@@ -148,18 +148,12 @@ export default function Page() {
         <section className="relative py-12 sm:py-20">
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_380px] xl:grid-cols-[minmax(0,1.3fr)_420px]">
             <div>
-              <Reveal>
-                <div className="section-kicker rounded-full">
-                  Recruiter-ready portfolio system
-                </div>
-              </Reveal>
-
               <Reveal delay={0.05}>
-                <h1 className="hero-title mt-6 max-w-2xl font-semibold text-white">
+                <h3 className="hero-title mt-6 max-w-2xl font-semibold text-white">
                   Building <span className="accent-text">backend-heavy</span>{" "}
                   products with interfaces that still feel sharp, modern, and
                   fast.
-                </h1>
+                </h3>
               </Reveal>
 
               <Reveal delay={0.1}>
