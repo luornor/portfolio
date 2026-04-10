@@ -155,7 +155,7 @@ export default function Page() {
               </Reveal>
 
               <Reveal delay={0.05}>
-                <h1 className="hero-title mt-6 max-w-4xl font-semibold text-white">
+                <h1 className="hero-title mt-6 max-w-2xl font-semibold text-white">
                   Building <span className="accent-text">backend-heavy</span>{" "}
                   products with interfaces that still feel sharp, modern, and
                   fast.
