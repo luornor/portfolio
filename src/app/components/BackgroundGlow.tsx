@@ -4,41 +4,58 @@ import { motion } from "framer-motion";
 
 export default function BackgroundGlow() {
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden">
-      {/* Orb 1 */}
+    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
       <motion.div
-        className="absolute -top-24 -left-24 h-105 w-105 rounded-full blur-3xl opacity-30"
+        className="absolute left-[-12%] top-[6%] h-[28rem] w-[28rem] rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(circle at 30% 30%, rgba(37,99,235,0.55), transparent 60%)",
+            "radial-gradient(circle, rgba(79,123,255,0.26) 0%, rgba(79,123,255,0.08) 42%, transparent 72%)",
         }}
         animate={{
-          x: [0, 40, 0],
-          y: [0, 25, 0],
-          scale: [1, 1.06, 1],
+          x: [0, 56, 0],
+          y: [0, 26, 0],
+          scale: [1, 1.08, 1],
         }}
         transition={{
-          duration: 14,
+          duration: 16,
           repeat: Infinity,
           repeatType: "mirror",
           ease: "easeInOut",
         }}
       />
 
-      {/* Orb 2 */}
       <motion.div
-        className="absolute -bottom-40 -right-40 h-130 w-130 rounded-full blur-3xl opacity-25"
+        className="absolute right-[-10%] top-[8%] h-[30rem] w-[30rem] rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(circle at 60% 40%, rgba(11,18,32,0.45), transparent 62%)",
+            "radial-gradient(circle, rgba(103,239,255,0.2) 0%, rgba(103,239,255,0.06) 42%, transparent 74%)",
         }}
         animate={{
-          x: [0, -35, 0],
-          y: [0, -20, 0],
+          x: [0, -36, 0],
+          y: [0, 48, 0],
           scale: [1, 1.04, 1],
         }}
         transition={{
           duration: 18,
+          repeat: Infinity,
+          repeatType: "mirror",
+          ease: "easeInOut",
+        }}
+      />
+
+      <motion.div
+        className="absolute bottom-[-18%] left-[28%] h-[24rem] w-[24rem] rounded-full blur-3xl"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(142,247,217,0.12) 0%, rgba(142,247,217,0.04) 38%, transparent 75%)",
+        }}
+        animate={{
+          x: [0, 34, 0],
+          y: [0, -42, 0],
+          scale: [1, 1.06, 1],
+        }}
+        transition={{
+          duration: 20,
           repeat: Infinity,
           repeatType: "mirror",
           ease: "easeInOut",
