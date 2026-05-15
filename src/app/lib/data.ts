@@ -1,6 +1,6 @@
 export const PROFILE = {
   name: "Luornor Nathan Tettey",
-  title: "Software Engineer",
+  title: "Software Engineer & AI/ML Builder",
   location: "Accra, Ghana",
   email: "luornornathan@gmail.com",
   phone: "+233245597748",
@@ -13,14 +13,14 @@ export const PROFILE = {
   },
   summary: [
     "I build reliable APIs and backend systems with Django/DRF and ship clean, responsive UIs with React/Next.js.",
-    "Strong foundations in data structures and algorithms, with a practical, product-focused engineering mindset.",
+    "I also build practical AI/ML projects, from deployed model demos to reproducible training pipelines and readable model documentation.",
   ],
 };
 
 export const SKILLS = {
   languages: ["Python", "JavaScript", "TypeScript", "Java", "C/C++", "SQL"],
-  frameworks: ["Django", "Django REST Framework", "React", "Next.js"],
-  tooling: ["Git", "Docker", "PostgreSQL", "Celery", "Vercel"],
+  frameworks: ["Django", "Django REST Framework", "React", "Next.js", "scikit-learn"],
+  tooling: ["Git", "Docker", "PostgreSQL", "Celery", "Vercel", "Streamlit", "Pandas", "NumPy"],
 };
 
 export const EXPERIENCE = [
@@ -112,6 +112,59 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
+    name: "Handwritten Digit Classifier",
+    kind: "Data/ML",
+    description:
+      "Deployed Streamlit app that classifies handwritten digits with a compact MNIST-trained neural network.",
+    highlights: [
+      "Trained on MNIST-scale 28x28 images with rotation and shift augmentation.",
+      "Includes image upload preprocessing, confidence display, tests, CI, and a model card.",
+      "Live app lets reviewers test the model directly in the browser.",
+    ],
+    tech: ["Python", "scikit-learn", "Streamlit", "MNIST"],
+    live: "https://handwritten-classifier.streamlit.app/",
+    featured: true,
+  },
+  {
+    name: "Iris Flower Classifier",
+    kind: "Data/ML",
+    description:
+      "Small, reproducible classification project for predicting Iris flower species from four measurements.",
+    highlights: [
+      "Uses a clean scikit-learn pipeline with scaling and logistic regression.",
+      "Includes training metrics, saved model artifacts, and a prediction CLI.",
+    ],
+    tech: ["Python", "scikit-learn", "Classification"],
+    repo: "https://github.com/luornor/iris-flower-classifier",
+    featured: false,
+  },
+  {
+    name: "Breast Cancer Diagnostic Classifier",
+    kind: "Data/ML",
+    description:
+      "Binary classification project using the Wisconsin Breast Cancer dataset with clear evaluation and safety notes.",
+    highlights: [
+      "Reports ROC-AUC and malignant-class recall instead of relying only on accuracy.",
+      "Includes a medical-use disclaimer, saved model bundle, and prediction CLI.",
+    ],
+    tech: ["Python", "scikit-learn", "Model Evaluation"],
+    repo: "https://github.com/luornor/breast-cancer-diagnostic-classifier",
+    featured: false,
+  },
+  {
+    name: "Energy Demand Forecasting",
+    kind: "Data/ML",
+    description:
+      "Time-series forecasting baseline for annual energy demand using lag features and chronological validation.",
+    highlights: [
+      "Builds lag, rolling mean, and change features from yearly energy data.",
+      "Includes holdout metrics, recursive forecasting, and transparent limitations.",
+    ],
+    tech: ["Python", "scikit-learn", "Time Series"],
+    repo: "https://github.com/luornor/energy-demand-forecasting",
+    featured: false,
+  },
+  {
     name: "oil-site",
     kind: "Frontend/UI",
     description: "UI design project built with Vite and TypeScript and deployed on Vercel.",
@@ -173,19 +226,7 @@ export const PROJECTS: Project[] = [
     tech: ["Python", "Django", "Django REST Framework"],
     repo: "https://github.com/luornor/listing_management",
     featured: true,
-  },
-  {
-    name: "jiji-web",
-    kind: "Full-stack",
-    description: "Full-stack e-commerce app with a React frontend and Django backend.",
-    highlights: [
-      "Supports product listing and cart management flows.",
-      "Uses familiar React and Django REST patterns.",
-    ],
-    tech: ["React", "Django", "Django REST Framework"],
-    repo: "https://github.com/luornor/jiji-web",
-    featured: false,
-  },
+  }
 ];
 
 export const EDUCATION = [

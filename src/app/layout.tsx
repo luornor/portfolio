@@ -15,9 +15,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luornor Nathan Tettey | Software Engineer",
+  title: "Luornor Nathan Tettey | Software Engineer & AI/ML Builder",
   description:
-    "Portfolio of Luornor Nathan Tettey - software engineer focused on Django/DRF, React, and production-ready product systems.",
+    "Portfolio of Luornor Nathan Tettey - software engineer focused on Django/DRF, React, AI/ML projects, and production-ready product systems.",
 };
 
 export default function RootLayout({

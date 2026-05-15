@@ -69,17 +69,13 @@ function Nav() {
   );
 }
 
-function SignalItem({
-  label,
-  value,
-}: {
-  label: string;
-  value: string;
-}) {
+function SignalItem({ label, value }: { label: string; value: string }) {
   return (
     <div className="data-chip rounded-2xl">
       <p className="eyebrow text-[0.62rem]">{label}</p>
-      <p className="mt-2 text-sm font-medium text-white sm:text-base">{value}</p>
+      <p className="mt-2 text-sm font-medium text-white sm:text-base">
+        {value}
+      </p>
     </div>
   );
 }
@@ -149,11 +145,11 @@ export default function Page() {
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_380px] xl:grid-cols-[minmax(0,1.3fr)_420px]">
             <div>
               <Reveal delay={0.05}>
-                <h2 className="hero-title mt-6 max-w-2xl font-semibold text-white">
+                <h4 className="hero-title mt-6 max-w-4xl font-semibold text-white">
                   Building <span className="accent-text">backend-heavy</span>{" "}
-                  products with interfaces that still feel sharp, modern, and
-                  fast.
-                </h2>
+                  products, AI/ML products and interfaces that still feel
+                  sharp, modern, and fast.
+                </h4>
               </Reveal>
 
               <Reveal delay={0.1}>
@@ -207,13 +203,13 @@ export default function Page() {
               </Reveal>
 
               <Reveal delay={0.2}>
-                <div className="panel panel-grid mt-10 rounded-[2rem] p-5 sm:p-6">
+                <div className="panel panel-grid mt-10 rounded-4xl p-5 sm:p-6">
                   <div className="relative z-10 grid gap-4 lg:grid-cols-[1.3fr_1fr]">
                     <div>
                       <p className="eyebrow text-xs">Current signal</p>
                       <h2 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                        Full-stack engineer with a strong API core and a modern
-                        front-end finish.
+                        Full-stack engineer with a strong API core, AI/ML
+                        researcher, and a modern front-end finish.
                       </h2>
                       <p className="muted mt-4 max-w-xl text-sm leading-7 sm:text-base">
                         I enjoy building systems that are easy to maintain, fast
@@ -227,7 +223,7 @@ export default function Page() {
                       <SignalItem label="Location" value={PROFILE.location} />
                       <SignalItem
                         label="Focus"
-                        value="Django/DRF, Next.js, product systems"
+                        value="Django/DRF, Next.js, AI/ML demos"
                       />
                       <SignalItem
                         label="Recent milestone"
@@ -240,7 +236,7 @@ export default function Page() {
             </div>
 
             <Reveal delay={0.2}>
-              <aside className="panel panel-strong rounded-[2rem] p-5 sm:p-6">
+              <aside className="panel panel-strong rounded-4xl p-5 sm:p-6">
                 <div className="relative z-10">
                   <div className="flex items-center justify-between">
                     <div>
@@ -263,8 +259,9 @@ export default function Page() {
                     <div className="panel-muted rounded-2xl px-4 py-4">
                       <p className="eyebrow text-[0.62rem]">Strengths</p>
                       <p className="mt-2 text-sm leading-7 text-slate-200">
-                        API design, maintainable React interfaces, structured
-                        thinking, and product-focused delivery.
+                        API design, maintainable React interfaces, AI/ML
+                        researcher, Prompt Engineering structured thinking, and
+                        product-focused delivery.
                       </p>
                     </div>
                     <div className="panel-muted rounded-2xl px-4 py-4">
@@ -281,7 +278,9 @@ export default function Page() {
                   <div className="mt-6 grid gap-3 sm:grid-cols-2">
                     <div className="data-chip rounded-2xl">
                       <MapPin className="h-4 w-4 text-cyan-300" />
-                      <p className="mt-3 text-sm text-white">{PROFILE.location}</p>
+                      <p className="mt-3 text-sm text-white">
+                        {PROFILE.location}
+                      </p>
                     </div>
                     <div className="data-chip rounded-2xl">
                       <Sparkles className="h-4 w-4 text-cyan-300" />
@@ -306,21 +305,18 @@ export default function Page() {
             {[
               {
                 icon: Cpu,
-                title: "Backend-first thinking",
-                copy:
-                  "I enjoy designing APIs and service logic that stay readable, reliable, and ready for change.",
+                title: "Backend and ML thinking",
+                copy: "I enjoy designing APIs, model workflows, and service logic that stay readable, reliable, and ready for change.",
               },
               {
                 icon: FolderGit2,
                 title: "Readable product delivery",
-                copy:
-                  "I translate engineering work into interfaces and project stories that are easy for teams and recruiters to understand.",
+                copy: "I translate engineering work into interfaces and project stories that are easy for teams and recruiters to understand.",
               },
               {
                 icon: BriefcaseBusiness,
                 title: "Built for hiring screens",
-                copy:
-                  "Projects, experience, and contact signals are arranged to make strengths visible within seconds.",
+                copy: "Projects, experience, and contact signals are arranged to make strengths visible within seconds.",
               },
             ].map(({ icon: Icon, title, copy }, index) => (
               <Reveal key={title} delay={index * 0.05}>
@@ -400,11 +396,12 @@ export default function Page() {
         >
           <div className="grid gap-6 lg:grid-cols-[0.85fr_minmax(0,1fr)]">
             <Reveal>
-              <div className="panel panel-strong rounded-[2rem] p-5 sm:p-6 lg:sticky lg:top-28">
+              <div className="panel panel-strong rounded-4xl p-5 sm:p-6 lg:sticky lg:top-28">
                 <div className="relative z-10">
                   <p className="eyebrow text-xs">What teams get</p>
                   <h3 className="mt-3 text-2xl font-semibold text-white">
-                    Product-minded engineering with strong technical fundamentals.
+                    Product-minded engineering with strong technical
+                    fundamentals.
                   </h3>
                   <p className="muted mt-4 text-sm leading-7 sm:text-base">
                     My experience spans frontend delivery, API work, and
@@ -415,7 +412,9 @@ export default function Page() {
 
                   <div className="mt-6 grid gap-3">
                     <div className="data-chip rounded-2xl">
-                      <p className="eyebrow text-[0.62rem]">Frontend delivery</p>
+                      <p className="eyebrow text-[0.62rem]">
+                        Frontend delivery
+                      </p>
                       <p className="mt-2 text-sm text-white">
                         Next.js interfaces with reusable component systems.
                       </p>
@@ -439,7 +438,10 @@ export default function Page() {
 
             <div className="timeline-line space-y-5 pl-8">
               {EXPERIENCE.map((item, index) => (
-                <Reveal key={`${item.company}-${item.role}`} delay={index * 0.06}>
+                <Reveal
+                  key={`${item.company}-${item.role}`}
+                  delay={index * 0.06}
+                >
                   <article className="timeline-card panel rounded-[1.7rem] p-5 sm:p-6">
                     <span className="timeline-dot" />
                     <div className="relative z-10">
